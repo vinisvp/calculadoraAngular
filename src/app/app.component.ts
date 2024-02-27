@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculadora';
-  version = '0.0.1';
+  version = '0.0.2';
   num1 = 10;
   num2 = 20;
 }

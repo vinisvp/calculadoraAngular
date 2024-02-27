@@ -1,0 +1,12 @@
+<form>
+  <p>Primeiro número</p>
+  <input type="number" [(ngModel)]="num1" name="num1">
+
+  <p>+</p>
+
+  <p>Segundo número</p>
+  <input type="number" [(ngModel)]="num2" name="num2">
+
+  <button (click)="calc()">Somar</button>
+  <p>{{sum}}</p>
+</form>
