@@ -1,15 +1,31 @@
-<form>
-  <p>Primeiro número</p>
-  <input type="number" [(ngModel)]="num1" name="num1">
+<div class="countainer">
+  <h1>Calculadora</h1>
 
-  <p>{{operator}}</p>
+  <form>
+    <div class="inputs">
+      <div class="number">
+        <p>Primeiro número</p>
+        <input type="number" [(ngModel)]="num1" name="num1">
+      </div>
 
-  <p>Segundo número</p>
-  <input type="number" [(ngModel)]="num2" name="num2">
+      <p>{{operator}}</p>
 
-  <button (click)="sum()">+</button>
-  <button (click)="sub()">-</button>
-  <button (click)="mult()">X</button>
-  <button (click)="div()">÷</button>
-  <p>{{result}}</p>
-</form>
+      <div class="number">
+        <p>Segundo número</p>
+        <input type="number" [(ngModel)]="num2" name="num2">
+      </div>
+    </div>
+
+    <div class="btn">
+      <div class="btnLine">
+          <button (click)="sum()">+</button>
+          <button (click)="sub()">-</button>
+      </div>
+      <div class="btnLine">
+        <button (click)="mult()">X</button>
+        <button (click)="div()">÷</button>
+      </div>
+    </div>
+    <p>{{result}}</p>
+  </form>
+</div>
