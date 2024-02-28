@@ -2,11 +2,14 @@
   <p>Primeiro número</p>
   <input type="number" [(ngModel)]="num1" name="num1">
 
-  <p>+</p>
+  <p>{{operator}}</p>
 
   <p>Segundo número</p>
   <input type="number" [(ngModel)]="num2" name="num2">
 
-  <button (click)="calc()">Somar</button>
-  <p>{{sum}}</p>
+  <button (click)="sum()">+</button>
+  <button (click)="sub()">-</button>
+  <button (click)="mult()">X</button>
+  <button (click)="div()">÷</button>
+  <p>{{result}}</p>
 </form>

@@ -8,9 +8,26 @@ import { Component } from '@angular/core';
 export class CalcComponent {
   num1: number = 0;
   num2: number = 0;
-  sum: number = 0;
+  result: number = 0;
+  operator: string = "";
 
-  calc(){
-    this.sum = this.num1 + this.num2;
+  sum(){
+    this.result = this.num1 + this.num2;
+    this.operator = "+";
+  }
+
+  sub(){
+    this.result = this.num1 - this.num2;
+    this.operator = "-";
+  }
+
+  mult(){
+    this.result = this.num1 * this.num2;
+    this.operator = "X";
+  }
+
+  div(){
+    this.result = this.num1 / this.num2;
+    this.operator = "÷";
   }
 }
