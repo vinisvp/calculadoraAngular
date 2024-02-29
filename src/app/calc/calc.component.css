@@ -30,15 +30,32 @@ h1{
   border-radius: 10px;
   width: 150px;
   padding: 10px;
+  border: 0px;
 }
 
 .btn{
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
 button{
   margin-left: 10px;
-  padding: 16px;
+  width: 70px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-radius: 10px;
+  border: 0px;
+}
+
+.result{
+  background-color: #000000;
+  width: 10%;
+  padding-block: 1px;
+  border-radius: 10px;
+}
+
+.result p{
+  color: white;
 }
