@@ -12,6 +12,7 @@
 
 h1{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .inputs{
@@ -22,15 +23,30 @@ h1{
 
 .number p{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .number input{
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(154, 255, 179);
+  font-family: 'Techno LCD';
+  font-size: 20px;
   border-radius: 10px;
-  width: 150px;
+  width: auto;
   padding: 10px;
   border: 0px;
+}
+
+.operator{
+  background-color: rgb(154, 255, 179);
+  margin-left: 10px; margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 .btn{
@@ -50,12 +66,20 @@ button{
 }
 
 .result{
+  display: flex;
+  justify-content: center;
+}
+
+.display{
   background-color: #000000;
-  width: 10%;
-  padding-block: 1px;
+  width: 30%;
+  margin-top: 10px;
+  padding-left: 20px;
   border-radius: 10px;
 }
 
-.result p{
+.display p{
   color: white;
+  font-size: 20px;
+  text-align: justify;
 }
